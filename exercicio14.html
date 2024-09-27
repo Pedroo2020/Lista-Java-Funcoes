@@ -7,7 +7,23 @@
 
     <script>
 
-        
+        function bhaskara(a, b, c) {
+
+            let delta = (b ** 2) - (4 * a * c)
+
+            if(delta < 0 ){
+                return alert("As raízes não existem")
+            } 
+
+            let resultado1 = ((-b) + (Math.sqrt(delta))) / (2 * a)
+            let resultado2 = ((-b) - (Math.sqrt(delta))) / (2 * a)
+
+            alert("X1: " + resultado1)
+            alert("X2: " + resultado2)
+
+        }
+
+        bhaskara(2, -5, -7) 
 
     </script>
 

@@ -7,7 +7,23 @@
 
     <script>
 
-        
+        function calcularnotas(nota1, nota2, nota3, letra){
+            let media = 0
+
+            if(letra === 'A'){
+               media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3
+            }
+            else if(letra === 'P'){ 
+                media = ((parseFloat(nota1) * 5) + (parseFloat(nota2) * 3) + (parseFloat(nota3) * 2)) / 10
+            }
+            else {
+                return "Tipo de média incorreta"
+            }
+
+            return media
+        }
+
+        alert("A média calculada é: " + calcularnotas(8.5, 5.0, 10.0, "A"))
 
     </script>
 
